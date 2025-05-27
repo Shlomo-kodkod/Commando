@@ -14,7 +14,7 @@ namespace Commando
         public string status = "stand";
 
 
-        public Commando(string Name, string CodeName, string[] Tools, string Status)
+        public Commando(string Name, string CodeName)
         {
             this.name = Name;
             this.codeName = CodeName;
@@ -35,6 +35,24 @@ namespace Commando
         public void Attack()
         {
             Console.WriteLine($"Commando with code name {this.codeName} attacking now");
+        }
+
+        public string GetTools()
+        {
+            string tools = "";
+            foreach(string tool in this.tools)
+            {
+                tools += tool + ", ";
+            }
+            return tools;
+        }
+
+        public override string ToString()
+        {
+            
+            return $"Code Name: {this.codeName}\n" +
+                $"Tools: {this.GetTools()}\n" + 
+                $"Status: {this.status}";
         }
     }
 }

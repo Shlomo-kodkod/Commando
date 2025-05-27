@@ -24,5 +24,12 @@ namespace Commando
             Console.WriteLine("Shooting");
             this.bulletsNumber--;
         }
+
+        public override string ToString()
+        {
+            return $"Name: {this.name}\n" +
+                $"Manufacturer: {this.manufacturer}\n" +
+                $"BulletsNumber: {this.bulletsNumber}";
+        }
     }
 }
