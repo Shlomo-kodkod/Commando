@@ -10,16 +10,18 @@ namespace Commando
     {
         public static void Main()
         {
-            Commando commando = new Commando("Dany", "soldir101");
-            commando.Walk();
-            commando.Attack();
-            commando.Hide();
-            Console.WriteLine(commando);
+            Commando commando = new Commando("Dany", "commando101");
+            AirCommando airCommando = new AirCommando("Isreal", "commando202");
+            SeaCommando seaCommando = new SeaCommando("Haim", "commando303");
 
-            Weapon weapon = new Weapon("AK-47", "wwo", 30);
+            Commando[] commandos = new Commando[] { commando, airCommando, seaCommando };
 
-            weapon.Shoot();
-            Console.WriteLine(weapon);
+            foreach(Commando c in commandos)
+            {
+                c.Attack();
+            }
+
+
 
         }
     }

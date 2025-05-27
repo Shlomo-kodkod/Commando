@@ -19,10 +19,23 @@ namespace Commando
             this.bulletsNumber = BulletsNumber;
         }
 
+        public bool IsThereBullets()
+        {
+            return this.bulletsNumber > 0;
+        }
+
         public void Shoot()
         {
-            Console.WriteLine("Shooting");
-            this.bulletsNumber--;
+            if (this.IsThereBullets())
+            {
+                Console.WriteLine("Shooting");
+                this.bulletsNumber--;
+            }
+            else
+            {
+                Console.WriteLine("The weapon is empty");
+            }
+            
         }
 
         public override string ToString()
