@@ -8,20 +8,20 @@ namespace Commando
 {
     public class WeaponFactory
     {
-        private List<Weapon> weapons = new List<Weapon>();
+        private List<Firearm> weapons = new List<Firearm>();
 
-        public Weapon CreatWeapon(string name, string manufacturer, int bulletsNumber)
+        public Firearm CreatWeapon(string name, string manufacturer, int bulletsNumber)
         {
-            Weapon weapon = new Weapon(name, manufacturer, bulletsNumber);
+            Firearm weapon = new Firearm(name, manufacturer, bulletsNumber);
             return weapon;
         }
 
-        public void AddWeaponToList(Weapon weapon)
+        public void AddWeaponToList(Firearm weapon)
         {
             this.weapons.Add(weapon);
         }
 
-        public List<Weapon> GetAllWeapons()
+        public List<Firearm> GetAllWeapons()
         {
             return this.weapons;
         }

@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Commando
 {
-     public class Weapon
+     public class Firearm
     {
         public string name;
         public string manufacturer;
         public int bulletsNumber;
 
-        public Weapon(string Name, string Manufacturer, int BulletsNumber)
+        public Firearm(string Name, string Manufacturer, int BulletsNumber)
         {
             this.name = Name;
             this.manufacturer = Manufacturer;
