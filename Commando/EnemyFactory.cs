@@ -17,7 +17,12 @@ namespace Commando
             return enmey;
         }
 
-        public List<Enemy> GetAllEnemy()
+        public void AddEnemyToList(Enemy enemy)
+        {
+            this.enemies.Add(enemy);
+        }
+
+        public List<Enemy> GetAllEnemies()
         {
             return this.enemies;
         }
