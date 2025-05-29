@@ -12,7 +12,7 @@ namespace Commando
         public string manufacturer;
         public int bulletsNumber;
 
-        public Firearm(string Name, string Manufacturer, int BulletsNumber)
+        public  Firearm(string Name, string Manufacturer, int BulletsNumber)
         {
             this.name = Name;
             this.manufacturer = Manufacturer;

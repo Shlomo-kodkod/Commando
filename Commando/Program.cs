@@ -21,9 +21,9 @@ namespace Commando
             //    c.Attack();
             //}
 
-            CommandoFactory c = new CommandoFactory();
-            Commando s = c.CreatCommando("Commando", "mmm", "nnn");
-            s.Attack();
+            //CommandoFactory c = new CommandoFactory();
+            //Commando s = c.CreatCommando("Commando", "mmm", "nnn");
+            //s.Attack();
 
 
 
